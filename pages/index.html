@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="../public/style.css">
+	<link rel="stylesheet" href="../fontawesome-free-6.7.2-web/css/all.css">
+</head>
+<body class="bg-gradient-to-bl from-red-900 to-blue-900 h-screen flex justify-center items-center">
+	
+	<div class="w-[30rem] px-12 py-4 bg-white flex flex-col items-center gap-8 relative">
+			<h1 class="text-lg font-bold">Password Validation</h1>
+			<input type="password" id="password" placeholder="Enter Password" oninput="check()" class="w-full border-b-4 border-black p-4">
+			<i class="fa-solid fa-eye absolute top-24 right-16 text-gray-400" id="see" onclick="see()"></i>
+			<div class="py-3 flex flex-col gap-3 w-full items-start text-red-600">
+					<div class="flex items-center gap-2" id="check1">
+							<i class="fa-solid fa-check"></i>
+							<span>Length more than 5.</span>
+					</div>
+
+						<div class="flex items-center gap-2" id="check2">
+							<i class="fa-solid fa-check"></i>
+							<span>Length less than 10.</span>
+					</div>
+
+						<div class="flex items-center gap-2" id="check3">
+							<i class="fa-solid fa-check"></i>
+							<span>Contains numerical character</span>
+					</div>
+
+					<div class="flex items-center gap-2" id="check4">
+						<i class="fa-solid fa-check"></i>
+						<span>contains special character</span>
+				</div>
+
+					
+			</div>
+	</div>
+
+
+	<script src="../js.js"></script>
+</body>
+</html>
